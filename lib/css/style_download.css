@@ -1,0 +1,266 @@
+/*
+COMANDOS DO CSS3:
+1 - font-size = tamalho da fonte;
+2 - margin = define a área de margem nos quatro lados do elemento; 
+3 - padding =  Preenchimento - Espaçamento dentro dos limites do conteúdo;
+4 - max-width = estabelece a largura máxima de um elemento;
+5 - clear: especifica se um elemento pode ter elementos flutuantes ao seu lado ou se devem ser movidos para abaixo dele (clear).both = É uma palavra-chave que indica que o elemento será movido para baixo para limpar os elementos flutuantes do lado esquerdo e direito;
+6 - divider (div) : é um divisor de espaços;
+7 - background = fundo;
+8 - width = determina a largura da área de conteúdo de um elemento;
+9 - background-repeat = Repete a imagem vertical e horizontalmente, no-repeat = Não repete a imagem;
+10 - margin:auto = indica o espaço acima do elemento. Valores negativos são aceitos;
+11 - text-transform = defina os efeitos de capitalização (maiúsculas, minúsculas) do texto,
+12 - capitalize = Causa o efeito de transformar as primeiras letras das palavras do texto em maiúscula,
+13 - uppercase = Causa o efeito de transformar todas as letras das palavras do texto em maiúscula;
+14 - font-weight = especifica o peso ou a intensidade da fonte (ex.: negrito = bold);
+15 - color = cor;
+16 - line-height = permite controlar o espaçamento entre as linhas de um texto;
+background-attachment = determina se aquela posição da imagem é fixa com o viewport, ou se irá rolar juntamente com o seu bloco.(fixed = Essa chave significa que o background é fixo em relação ao viewport.);
+17 - a:hover = define o estilo do link quando passa-se o mouse sobre ele;
+18 - text-decoration = é usada para definir a formatação de  underline, overline, line-through ou blink. As decorações underline e overline são posicionadas abaixo e acima do texto (respectivamente), e line-through cortando-o. (none = Sem decoração);
+19 - !important = efeito cascata;
+20 - border-raidus = Essa propriedade permite definir como bordas arredondadas são;
+21 - text-align = descreve como conteúdo inline, como texto, é alinhado no elemento pai em bloco. text-align não controla o alinhamento de elementos em bloco, apenas o seu conteúdo inline. (center = O conteúdo embutido é centralizado na caixa de linha).
+22 - height = A propriedade height do CSS determina a altura da área do conteúdo de um elemento. A área de conteúdo consiste no padding, margin e border do elemento.
+23 - min-height = é usado para definir a altura mínima de um determinado elemento. Ele impede que o valor usado da propriedade height se torne menor que o valor especificado para min-height.
+24 - float: determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu containêr, onde textos  e elementos em linha irão se posicionar ao seu redor. (left = É uma palavra-chave que indica que o elemento deve flutuar à esquerda do bloco.); 
+25 - list-style = é uma propriedade para configurar o estilo da lista. 
+26 - margin-top = indica o espaço acima do elemento. Valores negativos são aceitos.
+27 - display = display é a propriedade mais importante do CSS para controlar o layout. (inline = Um elemento com valor inline é sempre chamado de elemento de linha.);
+28 - position = define alternativas para posicionar elementos, projetados para serem úteis em efeitos de animações.(absolute = se utiliza do ponto superior esquerdo de outros elementos. Estes elementos são os parentes dele do elemento com position absolute. Mais especificamente o pai.), (relative = Todos os positions precisam de um ponto para iniciar o cálculo da coordenada para assim posicionar o elemento na tela. Ao contrário do que muitos acham, esse ponto não é o ponto central do elemento, o ponto base é o canto superior esquerdo do elemento. A partir deste canto, o browser irá calcular a coordenada que você definiu e irá posicionar o elemento no viewport.)
+29 - z-index = trabalha com um eixo que não é muito conhecido e tampouco usado pela maioria dos desenvolvedores, o eixo Z. O eixo Z é o eixo responsável pelo cálculo e posicionamento da profundidade de algum elemento, ou seja, é aquele que irá determinar se o elemento estará mais próximo ou mais afastado da tela.
+30 - top = Topo;
+31 - left = esquerda;
+32 - opacity = especifica a transparência de um elemento, isto é, o grau no qual o background atrás do elemento é sobreposto;
+33 - cursos = especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento. (pointer =  Usado quando pairando o cursor sobre links, tipicamente uma mão.)
+*/
+
+
+
+/*HEADER*/
+.oculta{
+	font-size: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+img.logo{
+	max-width: 200px;
+	margin-top: 6px;
+	margin-left: -200px;
+}
+
+.header{
+	background-color: #333;
+	float: left;
+	width: 100%;
+	padding: 10px;
+}
+
+.logo{
+	float: left;
+	margin-left: 150px; 
+}
+
+
+ul.menu{
+	list-style:none;
+	float:right;
+	margin-top: 15px;
+	margin-right: -80px;
+}
+
+ul.menu li{
+	display: inline;
+}
+
+ul.menu li a{
+	margin: 30px; 
+	color: #fff;
+	font-size: 16px;
+}
+
+ul.menu li a:hover{
+	color: #ffc26c;
+	text-decoration: none;
+}
+
+
+/*BACKGROUNDS*/
+.background-contato{
+	background-color: #505050;
+}
+
+/*CORES*/
+.color-white{
+	color:#FFFFFF;
+}
+
+.color-black{
+	color: #000000;
+}
+
+/*HOME*/
+.fundo{
+	clear: both;
+	background-color: #fffd88;
+}
+
+.home{
+	padding: 120px 0px;
+}
+
+.titulo-home{
+	font-size: 40px;
+	margin-left: 40PX;
+}
+
+.descricao-home{
+	padding-bottom: 20px;
+	font-size: 12px;
+	margin-left: 40px;
+}
+
+
+
+/*CONTATO*/
+.contato-form{
+	padding: 50px 0px;
+	margin-top: -40px;
+}
+
+.titulo-contato{
+	text-transform:uppercase;
+  	color: #fff;
+  	font-size: 35px;
+  	font-weight: bold;
+  	margin-top: 25px;
+}
+
+.descricao-contato{
+  	color: #fff;
+  	line-height: 24px;
+  	margin: 5px;
+
+}
+
+/*FORMS*/
+form.hero_tech-form{
+	max-width: 650px;
+	margin: 0px auto;
+}
+
+form.hero_tech-form input{
+	width: 100%;
+	margin: 5px;
+	height: 50px;
+	padding: 5px;
+	border: none;
+	color: #333;
+	font-weight: bold;
+	text-align: center;
+}
+
+form.hero_tech-form textarea{
+	padding: 5px;
+	border: none;
+	color: #333;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	min-height: 120px;
+	margin: 5px;
+}
+
+form.hero_tech-form input[type="submit"]{
+	background: #ffc26c;
+	color: #000;
+	font-size: 18px;
+	width: 140px;
+	border-radius: 2px;
+}
+
+form.hero_tech-form input[type="submit"]:hover{
+	background: #ffff40;
+	color: #000;
+}
+
+
+/*COPY*/
+div.copyright{
+	background-color: #333;
+	margin: 0px;
+	padding: 8px;
+	margin-top: -36px;
+}
+
+p.copyright{
+	color: #FFF;
+	margin: 0px;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*DOWNLOAD*/
+
+#tamanho-container-download{
+	width: 1050px;
+	height: 500px;
+	margin-top: 100px;
+	border-radius: 15px;
+	border: 2px solid #f3f3f3;
+	background-color: #ffff7a;
+	margin-top: -120px;
+	margin-bottom: 50px;
+}
+
+.foto {
+	margin-right: 20px;
+}
+
+.requisitos{
+	margin-top: 50px;
+	margin-left: 60px;
+}
+
+.contratos{
+	margin-left: 510px;
+	margin-top: -162px;
+}
+
+#botao-baixar{
+	width: 400px;
+	color: #000;
+	background-color: #ffc26c;
+	padding: 10px 24px;
+	border-radius: 8px;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+#botao-baixar:hover{
+	color: #ffc26c;
+	background-color: #000;
+	
+}
+
+#tamanho-container-download .requisitos p{
+	margin-top: -22px;
+	margin-left: 20px;
+	font-size: 15px;
+}
+
+#tamanho-container-download label{
+	font-size: 14px;
+}
+
+#tamanho-container-download p{
+	font-size: 14px;
+}
+
+#tamanho-container-download small{
+	font-size: 12px;
+	margin-left: 510px;
+
+}

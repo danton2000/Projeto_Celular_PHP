@@ -3,4 +3,5 @@ Projeto_Final_SENAC
 
 Projeto desenvolvido por Danton Rodrigues;
 
-Sistema de escolha de SmartPhone + site da empresa hero tech
+Sistema de escolha de SmartPhone
+

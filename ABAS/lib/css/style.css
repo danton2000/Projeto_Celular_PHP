@@ -1,0 +1,643 @@
+/*ABAS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aqua;
+    font-family: 'Arial';
+}
+
+.nav_tabs{
+    width: 1200px;
+    height: 400px;
+    margin: 50px 145px auto;
+    background-color: #fff;
+    position: relative;
+}
+
+.nav_tabs ul{
+    list-style: none;
+}
+
+.nav_tabs ul li{
+    float: left;
+}
+
+.nav_tabs #label{
+    width: 130px;
+    height: 65px;
+    padding: 8px;
+    background-color: cadetblue;
+    font-size: 18px;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.rd_tabs:checked ~ #label{
+    background-color: lightskyblue;
+}
+
+.rd_tabs{
+    display: none;
+}
+
+.content{
+    margin-top: -8px;
+    border-top: 5px solid steelblue;
+    display: none;
+    position: absolute;
+    height: 20px;
+    width: 1040px;
+    left: 0px;
+
+}
+
+.rd_tabs:checked ~ .content{
+    display: block;
+}
+
+/*conteudo da XML*/
+
+#h3_titulo{
+    text-align: center;
+    font-size: 24px;
+}
+
+#h3_sub_titulo{
+    text-align: left;
+    font-size: 22px;
+    
+}
+#conteudo_menu1{
+    background-color: rgb(248, 234, 112);
+    border: #000 2px solid;
+    width: 1040px;
+    padding: 10px;
+    margin: 0;
+}
+
+#conteudo_menu2{
+    background-color: rgb(248, 234, 112);
+    border: #000 2px solid;
+    width: 1040px;
+    padding: 10px;
+    margin: 0;
+}
+
+#label_xml{
+    font-weight: bold;
+    font-size: 14px;  
+    display: block;
+}
+
+.col{
+    width: 100px;
+}
+/*CELULAR*/
+
+/*#=id, centralizou o container(.=class)*/
+#tamanho_container_tab{
+	width: 500px;
+	margin-top: -0px;
+}
+
+#tamanho_menu{
+	margin-top: 20px;
+}
+
+#tamanho_login{
+	width: 350px;
+	margin-top: 100px;
+	border-radius: 15px;
+	border: 2px solid #f3f3f3;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(163,150,163,1);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(163,150,163,1);
+	box-shadow: 10px 10px 5px 0px rgba(163,150,163,1);
+
+}
+
+#espaço{
+	padding: 10px;
+}
+
+#botao_cadastrar{
+	background: #32CD32;/*fundo*/
+	color: #ffffff;/*letra*/
+	font-weight: bold;/*fonte da letra*/
+    width: 100px;
+    height: 50px;
+    margin-left: 450px;
+    margin-top: -80px;
+}
+#botao_cadastrar:hover{
+	background: #fff;/*fundo*/
+	color: #32CD32;/*letra*/
+}
+
+#botao_cadastrar_admin{
+	background: #32CD32;/*fundo*/
+	color: #ffffff;/*letra*/
+	font-weight: bold;/*fonte da letra*/
+	height: 35px;
+	margin-left: 870px;
+	margin-top: -130px;
+}
+
+#botao_cadastrar_admin:hover{
+	background: #000;/*fundo*/
+	color: #32CD32;/*letra*/
+}
+
+#btn_cadastrar_novo{
+	background: #32CD32;/*fundo*/
+	color: #ffffff;/*letra*/
+	font-weight: bold;/*fonte da letra*/
+	border-radius: 10px;
+	height: 80px;
+  	display: table-cell;
+}
+#btn_cadastrar_novo:hover{
+	background: #000;/*fundo*/
+	color: #32CD32;/*letra*/
+}
+
+#btn_listar{
+	background: rgb(202, 201, 146);/*fundo*/
+	color: #000;/*letra*/
+	font-weight: bold;/*fonte da letra*/
+	border-radius: 10px;
+	margin-top: -10px;
+	margin-bottom: 15px;
+}
+
+#btn_listar:hover{
+	background: #000;/*fundo*/
+	color: rgb(202, 201, 146);
+}
+
+#botao_editar:hover{
+	background:#fff; 
+	color: #FFA500;
+	font-weight: bold;
+}
+
+#botao_voltar_listar{
+	background-color: rgb(202, 202, 130);
+	color: #000;
+	font-weight: bold;
+	margin-top: 10px;
+}
+#botao_voltar_listar:hover{
+	background-color: #fff;
+	color: rgb(202, 202, 130);
+}
+
+#botao_voltar{
+	background-color: rgb(255, 185, 119);
+	color: #000;
+	width: 100px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+#botao_voltar:hover{
+	background-color: dimgray;
+	color: #fff;
+	width: 100px;
+	font-weight: bold;
+}
+
+#botao_voltar_pesquisa{
+	background-color: rgb(255, 185, 119);
+	color: #000;
+	margin-top: 10px;
+	width: 100px;
+	font-weight: bold;
+}
+
+#botao_voltar_pesquisa:hover{
+	background-color: dimgray;
+	color: #fff;
+}
+
+#botao_voltar_admin{
+	background-color: rgb(209, 205, 201);
+	color: #000;
+	width: 100px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+#botao_voltar_admin:hover{
+	background-color: #000;
+	color: #fff;
+	width: 100px;
+	font-weight: bold;
+}
+
+
+#botao_voltar_login:hover{
+	background-color: white;
+	color:deepskyblue
+}
+
+#botao_direita{
+	text-align: right;
+}
+
+#botao_esquerda{
+	text-align: left;
+	margin-top: -50px;
+	margin-bottom: 50px;
+}
+
+#icone_esquerda{
+	margin-bottom: 10px;
+	margin-top: -30px;
+}
+
+.fa-plus-circle{
+	font-size: 45px;
+	color: #32CD32;
+}
+
+.fa-plus-circle:hover{
+	color: darkgreen;
+}
+
+#btn_mostrar_pesquisa{
+	background: rgb(32,36,0);
+	background: linear-gradient(90deg, rgba(32,36,0,1) 0%, rgba(129,128,49,1) 40%, rgb(232, 240, 120) 100%);
+	color: #fff;
+	font-weight: bold;
+
+}
+
+#btn_mostrar_listas{
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,188,0,1) 61%, rgba(124,124,124,1) 98%);
+	color: #fff;
+	font-weight: bold;
+}
+
+#btn_mostrar_add{
+	background: rgb(22,168,166);
+	background: linear-gradient(90deg, rgba(22,168,166,1) 17%, rgba(0,91,255,1) 44%, rgba(80,113,147,1) 75%);
+	color: #fff;
+	font-weight: bold;
+}
+
+#btn_listar_admin{
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgb(27, 161, 250) 8%, rgba(0,198,255,1) 44%, rgba(150,150,150,1) 95%);
+	color: #fff;
+	font-weight: bold;
+}
+
+/*TELAS*/
+#conteudo_menu{
+	background-color: rgb(248, 234, 112);
+	margin-top: 30px;
+}
+
+#label_celular{
+	margin-bottom: -30px;
+}
+
+#telas_cadastro{
+	background-color: rgb(248, 234, 112);
+	margin-top: 100px;
+	border-radius: 10px;
+}
+
+#telas_inserir{
+	background-color: rgb(129, 129, 129);
+	margin-top: 100px;
+	border-radius: 10px;
+}
+
+#telas_cadastro_admin{
+	background-color: rgb(129, 129, 129);
+	margin-top: 100px;
+	border-radius: 10px;
+}
+
+#telas_editar{
+	background-color: rgb(246, 235, 133);
+	margin-top: 100px;
+	border-radius: 10px;
+}
+
+#telas_listar{
+	background-color: rgb(246, 235, 133);
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.my-custom-scrollbar {
+	position: relative;
+	height: 800px;
+	overflow: auto;
+	margin: auto -15px;
+}
+.table-wrapper-scroll-y {
+	display: block;
+}
+
+#telas_atualizacao{
+	background-color: rgb(218, 208, 119);
+	margin-top: 40px;
+	border-radius: 10px;
+	height: 150px;
+}
+
+.tela_inicial{
+	background-color: rgba(250, 228, 128, 0.993);
+}
+
+h3{
+	text-align: center;
+}
+
+h4{
+	text-align: center;
+}
+
+
+#espaçamento{
+	margin-top: 20px;
+}
+
+#topo_listar {
+	margin-top: 50px;
+}
+
+#topo_listar_h{
+	margin-top: -5px;
+}
+
+#topo_listar_itens{
+	margin-top: 5px;
+}
+
+#tabela{
+	margin-top: -20px;
+}
+
+#imagem_login{
+	width: 115px;
+	height: 115px;
+}
+
+/*IMAGENS*/
+#img_celular{
+	border-radius: 20px;
+}
+
+
+/* CARD COM ZOOM */
+
+.img-thumbnail{
+	background-color: #ccc !important;
+	border: 0px !important;
+	border-radius: 20px;
+}
+
+.hoverzoom {
+    position: relative;
+    width: 325px;
+    height: 200px;
+	overflow: hidden;
+}
+
+.hoverzoom img {
+    max-width: 100%;
+    border-radius: 2px;
+    -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+.hoverzoom:hover img {
+	-webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+	transform: scale(1.5);
+	
+}
+.hoverzoom .retina{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;    
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);    
+    border-radius: 2px;
+    text-align: center;
+    padding: 30px;
+
+    -webkit-transition:	 all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
+}
+.hoverzoom:hover .retina {
+    opacity: 1;
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+    
+}
+
+.a1{
+	color: #FFF;
+	font-size: 18px;
+}
+
+.a2{
+	margin-top: 25px;
+    color: #fff;
+}
+
+#botao_voltar_login{
+	background: deepskyblue;
+	color: white;
+	font-weight: bold;
+	margin-left: -5px;
+	margin-top: 5px;
+}
+
+#icones_menu{
+	border-radius: 20px;
+	margin-top: 100px;
+	height:auto;
+}
+
+#esquerda{
+	margin-bottom: -50px;
+}
+
+#mostra_admin{
+	margin-top: -70px;
+}
+
+label{
+	font-weight: bold;
+	margin-top: 40px;
+}
+
+#mostra_admin_input{
+	width: 200px;
+	margin-top: 0px;
+	text-align: center;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*LISTAR celularS*/
+table{
+	/* text-align: center; */
+	font-size: 20px;
+	/* font-weight: bold; */
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#quantidade{
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+}
+/*LISTAR adminS ATIVOS e INATIVOS*/
+
+#nivel{
+	text-align: center;
+}
+
+/*TELA DE ESCOLHA DE SMATPHONE*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    margin-top: -8px;
+    border-top: 5px solid steelblue;
+    display: none;
+    position: absolute;
+    height: 20px;
+    width: 1040px;
+    left: 0px;
+
+}
+#h3_titulo{
+    text-align: center;
+    font-size: 24px;
+}
+
+#h3_sub_titulo{
+    text-align: left;
+    font-size: 22px;
+    
+}
+
+#linha_menu{
+    border-top: 1px solid black;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+
+.botoes{
+	display: inline-flex;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.botoes .btn_pesquisar{
+	background-color: rgb(9, 151, 9);
+	color: #fff;
+	width: 100px;
+}
+
+.botoes .btn_pesquisar:hover{
+	background-color: #000;
+	color: rgb(9, 151, 9);
+}
+
+.botoes .btn_limpar{
+	margin-left: 10px;
+	background-color: #a1a1a1;
+	color: #000;
+	width: 100px;
+}
+
+.botoes .btn_limpar:hover{
+	background-color: #000;
+	color: #fff;
+}
+
+#label_celular{
+    font-weight: bold;
+    font-size: 14px;  
+    display: block;
+}
+
+#input_super_small{
+    width: 30px;
+    text-align: center;
+}
+
+#input_small{
+    width: 80px;
+    text-align: center;
+}
+
+#input_big{
+    width: 250px;
+    text-align: center;
+}
+
+#input_big_big{
+    width: 300px;
+    text-align: center;
+}
+
+#input_grande{
+    width: 300px;
+    height: 45px;
+    text-align: center;
+}
+
+#input_media_grande{
+    width: 210px;
+    text-align: center;
+}
+
+#input_media{
+    width: 170px;
+    text-align: center;
+}
+
+#input_mega{
+    width: 500px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

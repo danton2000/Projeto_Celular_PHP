@@ -3,5 +3,5 @@ Projeto_Final_SENAC
 
 Projeto desenvolvido por Danton Rodrigues;
 
-Sistema de escolha de SmartPhone
+Sistema de escolha de SmartPhones
 

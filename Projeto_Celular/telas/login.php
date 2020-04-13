@@ -12,7 +12,7 @@
 	<div class="container" id="tamanho_login">
 		<div id="espaço">
 			<center>
-			<img  id="imagem_login" src="lib/img/cadeado.png">
+			<img class="img-webp"  id="imagem_login" src="img/cadeado.webp">
 			</center>	
 			<form action="lib/action/index1.php" method="POST">
 				<div class="form-group">

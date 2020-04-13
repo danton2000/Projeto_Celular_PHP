@@ -46,9 +46,9 @@ background-attachment = determina se aquela posição da imagem é fixa com o vi
 }
 
 img.logo{
-	max-width: 200px;
-	margin-top: 6px;
-	margin-left: -200px;
+	max-width: 150px;
+	margin-top: 1px;
+	margin-left: -150px;
 }
 
 .clear{
@@ -64,31 +64,50 @@ img.logo{
 
 .logo{
 	float: left;
-	height: 50px;
+	width: 140px;
+	height: 60px;
 	margin-left: 150px; 
 }
 
-
-ul.menu{
-	list-style:none;
-	float:right;
-	margin-top: 15px;
-	margin-right: -80px;
+li a{
+	margin-top: 5px;
+	font-size: 18px;
+	color: #fff !important;
 }
 
-ul.menu li{
-	display: inline;
+li a:hover{
+	color: #ffff40 !important;
 }
 
-ul.menu li a{
-	margin: 30px; 
-	color: #fff;
-	font-size: 16px;
+/*NAV BAR*/
+
+.navbar-inverse .navbar-toggle {/* botão do menu */
+    border-color: #333;
 }
 
-ul.menu li a:hover{
-	color: #ffc26c;
-	text-decoration: none;
+.navbar-inverse { /*cor do menu */
+    background-color: rgba(0, 0, 0, 1);
+    border-color: #080808;
+}
+
+.navbar-fixed-bottom, .navbar-fixed-top {
+    right: 0;
+	left: 0;
+	z-index: 1030;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #101010;
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: -55px;
+    margin-left: -55px;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 100px;
+}
+.navbar-collapse.in {
+    overflow-y: auto;
 }
 
 /*IMGs*/
@@ -209,70 +228,78 @@ ul.menu li a:hover{
 
 /*Telas Sistema*/
 .sistema{
-	padding: 20px !important;
+	padding: 50px !important;
 }
 
 .img-sistema{
-	max-width: 100%;
+	max-width: 200%;
+	max-height: 300%;
 	position: absolute;
 	z-index: 0;
 	float: left;
 	top: 0;
 	left: 0;
-	padding: 0px;
+	border-radius: 10px;
 }
 
-.detalhe-sobre-sistema{
-	position: relative;
-	z-index: 5;
-	margin-top:0px; 
-	background-color: #FFFAFA;
-	padding: 8px;
-	color: #1C1C1C;
-	width: 100%;
-	height: 135px;
-	opacity: 0;
+.hoverzoom {
+    position: relative;
+    width: 360px;
+    height: 200px;
+	overflow: hidden;
+	margin-left: -35px;
+	margin-top: -45px;
+	margin-bottom: -25px;
 }
 
-.detalhe-sobre-sistema:hover{
-	opacity: 0.8;
-	cursor: pointer;
+.hoverzoom img {
+    max-width: 100%;
+    border-radius: 2px;
+    -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
 }
-
-.ult-img{
-	max-width: 100%;
-	position: absolute;
-	z-index: 0;
-	float: left;
-	top: 0;
-	left: 410px;
-	padding: 0px;
+.hoverzoom:hover img {
+	-webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+	transform: scale(1.5);
+	
 }
+.hoverzoom .retina{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;    
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);    
+    border-radius: 2px;
+    text-align: center;
+    padding: 30px;
 
-.detalhe-ult-img{
-	position: relative;
-	z-index: 5;
-	margin-top:0px; 
-	background-color: #FFFAFA;
-	padding: 8px;
-	color: #1C1C1C;
-	width: 100%;
-	height: 135px;
-	opacity: 0;
-	left: 410px;
+    -webkit-transition:	 all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
 }
-
-.detalhe-ult-img:hover{
-	opacity: 0.8;
-	cursor: pointer;
+.hoverzoom:hover .retina {
+    opacity: 1;
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+    
 }
-
 .titulo-detalhe-sistema{
-	font-size: 20px;
+	font-size: 26px;
+	color: #fff;
 }
 
 .descricao-sistema{
-	font-size: 12px;
+	font-size: 18px;
+	color: #fff;
 }
 
 /*CONTATO*/

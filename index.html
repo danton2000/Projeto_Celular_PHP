@@ -12,44 +12,42 @@
 	<link rel="stylesheet" href="lib/css/style.css">
 	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<!-- CARROSEL -->
 	<link rel="stylesheet" href="lib/owl.carousel/owl-carousel/owl.carousel.css">
+	<!-- ICONES -->
+	<link rel="stylesheet" href="icons/fontawesome/css/all.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- FAVICON -->
 	<link class="img-webp" rel="icon" type="image/png" href="imgs/favicon.webp">	
 </head>
 	<!--ENVOLVE O CORPO (TEXTO E TAGS) DO DOCUMENTO HTML --> 
 <body>
 	<!-- É UM INDICADOR DE UM AREA DE CONTEÚDO QUE VEM NO COMEÇO DE UM CONTEÚDO, POPULARMENTE CHAMADO DE "CABEÇALHO" --> 
 	<header class="header"><!-- INICIO DA HEADER -->
-		<!-- CONTEÚDO --> 
-		<div class="container">
-			<!-- TITULO DE SEÇÃO --> 
-			<h1 class="oculta"> Site da Hero Tech </h1>
-			<div class="logo">
-				<img class="img-webp logo" src="imgs/logo-hero-tech.webp" alt="Hero Tech" title="Logo Hero Tech" class="logo">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="logo">
+						<img class="img-webp logo" src="imgs/logo-hero-tech.webp" alt="Hero Tech" title="Logo Hero Tech" class="logo">
+					</div>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#links-menu" style="background-color: white;">
+					<i class="material-icons">menu</i>
+					</button>
+				</div>
+			
+				<nav id="links-menu" class="menu collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#empresa">Home</a></li>
+						<li><a href="#empresa">Usar</a></li>
+						<li><a href="#empresa">Sobre</a></li>
+						<li><a href="#empresa">Telas</a></li>
+						<li><a href="#contato">Contatos</a></li>
+					</ul>
+				</nav>
 			</div>
-			<!-- É UM INDICADOR DE UMA ÁREA NA PÁGINA QUE CONTÉM MAJORITARIAMENTE LINKS DE NAVEGAÇÃO --> 
-			<nav>
-				<!-- UMA LISTA NÃO ORDENADA --> 
-				<ul class="menu" class="color-white">
-					<!-- UM ITEM DA LISTA --> 
-					<li>
-						<a href="#home">HOME</a>
-					</li>
-					<li>
-						<a href="Projeto_Celular/tela_inicial.php">USAR</a>
-					</li>
-					<li>
-						<a href="#sobre">SOBRE</a>
-					</li>
-					<li>
-						<a href="#telas">TELAS</a>
-					</li>
-					<li>
-						<a href="#contato">CONTATO</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+		</nav>
+	</header> <!-- FIM DA HEADER -->
 	<!-- FINAL DO HEADER -->
 
 	<section id="home" class="home text-center background-home color-black clear"><!-- INICIO DA SECTION HOME-->
@@ -98,43 +96,53 @@
 			Escolha seu smarthphone com o nosso sistema com o melhor custo e benifício e com uma ótima qualidade de hardware.</p>
 			<div class="padding-20"></div>	
 
-			<article class="sistema col-md-3">
-				<img src="imgs\telas\TELA_PRINCIPAL.webp"class="img-webp img-sistema" alt="Tela Principal" title="Tela Principal">
-				<div class="detalhe-sobre-sistema">
-					<h1 class="titulo-detalhe-sistema">Tela Principal</h1>
-					<p class="descricao-sistema">Primeira Tela do Sistema</p>
+			<article class="sistema col-md-4">
+				<div class="hoverzoom">
+					<img src="imgs\telas\TELA_PRINCIPAL.webp" class="img-thumbnail img-webp img-sistema" alt="Tela Principal" title="Tela Principal">
+					<div class="retina">
+						<h1 class="titulo-detalhe-sistema">Tela Principal</h1>
+						<p class="descricao-sistema">Primeira Tela do Sistema</p>
+					</div>
 				</div>
 			</article>
 
-			<article class="sistema col-md-3">
-				<img src="imgs\telas\TELA_LOGIN.webp"class="img-webp img-sistema" alt="Tela de Login de Administrador" title="Tela de Login de Administrador">
-				<div class="detalhe-sobre-sistema">
-					<h1 class="titulo-detalhe-sistema">Tela de Login de Administrador</h1>
-					<p class="descricao-sistema">Autenticação de Usuários</p>
+			<article class="sistema col-md-4">
+				<div class="hoverzoom">
+					<img src="imgs\telas\TELA_LOGIN.webp" class="img-thumbnail img-webp img-sistema" alt="Tela de Login de Administrador" title="Tela de Login de Administrador">
+					<div class="retina">
+						<h1 class="titulo-detalhe-sistema">Tela de Login de Administrador</h1>
+						<p class="descricao-sistema">Autenticação de Usuários</p>
+					</div>
 				</div>
 			</article>
 
-			<article class="sistema col-md-3">
-				<img src="imgs\telas\TELA_CADASTRO_ADM.webp"class="img-webp img-sistema" alt="Tela de Listagem de Administradores" title="Tela de Listagem de Administradores">
-				<div class="detalhe-sobre-sistema">
-					<h1 class="titulo-detalhe-sistema">Tela de Cadastro de Administradores</h1>
-					<p class="descricao-sistema">Adicionar,alterar,excluir e listar Administradores</p>
+			<article class="sistema col-md-4">
+				<div class="hoverzoom">
+					<img src="imgs\telas\TELA_CADASTRO_ADM.webp" class="img-thumbnail img-webp img-sistema" alt="Tela de Listagem de Administradores" title="Tela de Listagem de Administradores">
+					<div class="retina">
+						<h1 class="titulo-detalhe-sistema">Tela de Cadastro de Administradores</h1>
+						<p class="descricao-sistema">Adicionar,alterar,excluir e listar Administradores</p>
+					</div>
 				</div>
 			</article>
 
-			<article class="sistema col-md-3">
-				<img src="imgs\telas\TELA_CADASTRO_CELULARES.webp"class="img-webp img-sistema" alt="Tela de Cadastro de SmarthPhones" title="Tela de Cadastro de SmarthPhones">
-				<div class="detalhe-sobre-sistema">
-					<h1 class="titulo-detalhe-sistema">Tela de Cadastro de SmarthPhones</h1>
-					<p class="descricao-sistema">Adicionar,alterar,excluir e listar SmarthPhones</p>
+			<article class="sistema col-md-4">
+				<div class="hoverzoom">
+					<img src="imgs\telas\TELA_CADASTRO_CELULARES.webp" class="img-thumbnail img-webp img-sistema" alt="Tela de Cadastro de SmarthPhones" title="Tela de Cadastro de SmarthPhones">
+					<div class="retina">
+						<h1 class="titulo-detalhe-sistema">Tela de Cadastro de SmarthPhones</h1>
+						<p class="descricao-sistema">Adicionar,alterar,excluir e listar SmarthPhones</p>
+					</div>
 				</div>
 			</article>
 
-			<article class="sistema col-md-3" >
-				<img src="imgs\telas\TELA_PESQUISA.webp"class="ult-img" alt="Tela de Pesquisar SmarthPhones" title="Tela de Pesquisar SmarthPhones">
-				<div class="detalhe-ult-img">
-					<h1 class="titulo-detalhe-sistema">Tela de Pesquisar SmarthPhones</h1>
-					<p class="descricao-sistema">Tela que mostra o SmarthPhone com a configuração e preço escolhida do usuário</p>
+			<article class="sistema col-md-4" >
+				<div class="hoverzoom">
+					<img src="imgs\telas\TELA_PESQUISA.webp" class="img-thumbnail img-webp img-sistema" alt="Tela de Pesquisar SmarthPhones" title="Tela de Pesquisar SmarthPhones">
+					<div class="retina">
+						<h1 class="titulo-detalhe-sistema">Tela de Pesquisar SmarthPhones</h1>
+						<p class="descricao-sistema">Tela que mostra o SmarthPhone com a configuração e preço escolhida do usuário</p>
+					</div>
 				</div>
 			</article>
 		</div>

@@ -46,9 +46,10 @@ background-attachment = determina se aquela posição da imagem é fixa com o vi
 }
 
 img.logo{
-	max-width: 150px;
-	margin-top: 1px;
-	margin-left: -150px;
+	margin-top: 12px;
+	float: left;
+	width: 140px;
+	height: 40px;
 }
 
 .clear{
@@ -60,13 +61,6 @@ img.logo{
 	float: left;
 	width: 100%;
 	padding: 10px;
-}
-
-.logo{
-	float: left;
-	width: 140px;
-	height: 60px;
-	margin-left: 150px; 
 }
 
 li a{
@@ -110,14 +104,6 @@ li a:hover{
     overflow-y: auto;
 }
 
-/*IMGs*/
-.divider{
-	background: url(../imgs/divider.png);
-	width: 162px;
-	padding: 4px;
-	background-repeat:no-repeat;
-	margin: 0px auto;
-}
 
 /*BACKGROUNDS*/
 .background-home{
@@ -154,23 +140,27 @@ li a:hover{
   	margin-top: -10px;
 }
 
-
 .descricao{
   	color: #1C1C1C;
   	line-height: 24px;
   	margin: 5px;
 }
 
-
-
 /*BUTTONS*/
-.btn-baixar-sistema{
+#botao-usar-sistema{
 	color: #000;
 	background-color: #ffc26c;
-	padding: 10px 24px;
+	width: 250px;
 	border-radius: 8px;
 	font-size: 16px;
+	font-weight: bold;
 	text-transform: uppercase;
+}
+
+#botao-usar-sistema:hover{
+	color: #fff;
+	background-color: #ffc26c;
+	width: 250px;
 }
 
 .btn-baixar-sistema:hover{
@@ -198,7 +188,7 @@ li a:hover{
 
 .titulo-home{
 	font-size: 40px;
-	margin-left: 40PX;
+	margin-left: 40px;
 }
 
 .descricao-home{
@@ -232,17 +222,18 @@ li a:hover{
 }
 
 .img-sistema{
-	max-width: 200%;
-	max-height: 300%;
-	position: absolute;
+	width: 100%;
+	position: relative;
 	z-index: 0;
 	float: left;
 	top: 0;
-	left: 0;
+	left: 1000;
+	padding: 50px;
 	border-radius: 10px;
 }
 
 .hoverzoom {
+	border-radius: 13px;
     position: relative;
     width: 360px;
     height: 200px;
@@ -331,7 +322,7 @@ form.hero_tech-form{
 }
 
 form.hero_tech-form input{
-	width: 100%;
+	width: 98%;
 	margin: 5px;
 	height: 50px;
 	padding: 5px;
@@ -347,7 +338,7 @@ form.hero_tech-form textarea{
 	color: #333;
 	font-weight: bold;
 	text-align: center;
-	width: 100%;
+	width: 98%;
 	min-height: 120px;
 	margin: 5px;
 }

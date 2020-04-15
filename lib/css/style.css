@@ -57,10 +57,8 @@ img.logo{
 }
 
 .header{
-	background-color: #333;
+	background-color: #000;
 	float: left;
-	width: 100%;
-	padding: 10px;
 }
 
 li a{
@@ -143,14 +141,14 @@ li a:hover{
 .descricao{
   	color: #1C1C1C;
   	line-height: 24px;
-  	margin: 5px;
 }
 
 /*BUTTONS*/
 #botao-usar-sistema{
-	color: #000;
-	background-color: #ffc26c;
-	width: 250px;
+	color: #fff;
+	background: rgb(255,184,0);
+	background: linear-gradient(90deg, rgba(255,184,0,1) 0%, rgba(239,245,0,1) 30%, rgba(239,245,0,1) 77%, rgba(255,184,0,1) 100%);
+	width: 100px;
 	border-radius: 8px;
 	font-size: 16px;
 	font-weight: bold;
@@ -159,8 +157,9 @@ li a:hover{
 
 #botao-usar-sistema:hover{
 	color: #fff;
-	background-color: #ffc26c;
-	width: 250px;
+	background: rgb(239,245,0);
+	background: linear-gradient(90deg, rgba(239,245,0,1) 0%, rgba(255,184,0,1) 30%, rgba(255,184,0,1) 77%, rgba(239,245,0,1) 100%);
+	width: 100px;
 }
 
 .btn-baixar-sistema:hover{
@@ -187,14 +186,15 @@ li a:hover{
 }
 
 .titulo-home{
+	color: #000;
+	text-align: center;
 	font-size: 40px;
-	margin-left: 40px;
+	margin-left: 15px;
 }
 
 .descricao-home{
 	padding-bottom: 20px;
 	font-size: 12px;
-	margin-left: 40px;
 }
 
 /*SOBRE*/
@@ -227,20 +227,20 @@ li a:hover{
 	z-index: 0;
 	float: left;
 	top: 0;
-	left: 1000;
 	padding: 50px;
 	border-radius: 10px;
 }
 
+/* CARD COM ZOOM */
+
 .hoverzoom {
-	border-radius: 13px;
     position: relative;
-    width: 360px;
+    width: 325px;
     height: 200px;
 	overflow: hidden;
 	margin-left: -35px;
 	margin-top: -45px;
-	margin-bottom: -25px;
+	margin-bottom: -25px;	
 }
 
 .hoverzoom img {
@@ -252,14 +252,15 @@ li a:hover{
     -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
     transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
 }
+
 .hoverzoom:hover img {
 	-webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
 	transform: scale(1.5);
-	
 }
+
 .hoverzoom .retina{
     position: absolute;
     width: 100%;
@@ -271,17 +272,16 @@ li a:hover{
     border-radius: 2px;
     text-align: center;
     padding: 30px;
-
     -webkit-transition:	 all .8s cubic-bezier(.190, 1.000, .220, 1.000);
     -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
     -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
     -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
     transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
 }
+
 .hoverzoom:hover .retina {
     opacity: 1;
-    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
-    
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5); 
 }
 .titulo-detalhe-sistema{
 	font-size: 26px;
@@ -295,7 +295,6 @@ li a:hover{
 
 /*CONTATO*/
 .contato-form{
-	
 	padding: 50px 0px;
 	margin-top: -40px;
 }
@@ -312,18 +311,17 @@ li a:hover{
   	color: #fff;
   	line-height: 24px;
   	margin: 5px;
-
 }
 
 /*FORMS*/
 form.hero_tech-form{
-	max-width: 650px;
+	max-width: 500px;
 	margin: 0px auto;
 }
 
 form.hero_tech-form input{
-	width: 98%;
-	margin: 5px;
+	width: 100%;
+	margin-top: 5px;
 	height: 50px;
 	padding: 5px;
 	border: none;
@@ -338,9 +336,9 @@ form.hero_tech-form textarea{
 	color: #333;
 	font-weight: bold;
 	text-align: center;
-	width: 98%;
+	width: 100%;
 	min-height: 120px;
-	margin: 5px;
+	margin-top: 5px;
 }
 
 form.hero_tech-form input[type="submit"]{

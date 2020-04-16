@@ -159,7 +159,7 @@
 			<form class="hero_tech-form" method="POST"  action="lib/php/enviar.php">
 				<input type="text" name="nome" placeholder="Insira o Seu Nome" required autocomplete="off">
 				<input type="email" name="email" placeholder="Insira o Seu E-mail" required autocomplete="off">
-				<textarea name="problema" placeholder="Qual o Problema?" required autocomplete="off"></textarea>
+				<textarea name="mensagem" placeholder="Qual a Mensagem?" required autocomplete="off"></textarea>
 				<input type="submit" name="enviar" value="Enviar">
 			</form>					
 		</div>

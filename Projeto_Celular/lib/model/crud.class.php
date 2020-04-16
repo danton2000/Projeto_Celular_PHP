@@ -1,6 +1,8 @@
 <?php
 
-require_once($_SERVER['DOCUMENT_ROOT'] . "/Projeto_Celular_PHP/Projeto_Celular/lib/model/conexao.class.php");
+// require_once($_SERVER['DOCUMENT_ROOT'] . "/Projeto_Celular_PHP/Projeto_Celular/lib/model/conexao.class.php");
+
+require_once("conexao.class.php");
 
 class Crud extends Conexao {
     private $tabela; 

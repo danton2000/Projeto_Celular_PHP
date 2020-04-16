@@ -12,7 +12,7 @@
 
 <body class="tela_inicial">
   <div class="container" id="">
-    <a href="../index.html" role="button" id="botao_voltar_login" class="btn btn-sm"><i class="fas fa-door-open"></i>Voltar para Site</a>
+    <a href="../index.php" role="button" id="botao_voltar_login" class="btn btn-sm"><i class="fas fa-door-open"></i>Voltar para Site</a>
   </div>
 
   <div class="container" id="icones_menu">

@@ -156,10 +156,10 @@
 			<p class="descricao-contato">Entre em contato e tenha todas as suas dúvidas respondidas<br>Responderemos o mais rápido possível</p>
 		</div>
 		<div class="contato-form">
-			<form class="hero_tech-form" method="POST"  action="lib/php/enviar.php">
-				<input type="text" name="nome" placeholder="Insira o Seu Nome" required autocomplete="off">
-				<input type="email" name="email" placeholder="Insira o Seu E-mail" required autocomplete="off">
-				<textarea name="mensagem" placeholder="Qual a Mensagem?" required autocomplete="off"></textarea>
+			<form class="hero_tech-form" method="POST"  action="enviar/enviar.php">
+				<input type="text" name="nome_contato" placeholder="Insira o Seu Nome" required autocomplete="off">
+				<input type="email" name="email_contato" placeholder="Insira o Seu E-mail" required autocomplete="off">
+				<textarea name="mensagem_contato" placeholder="Qual a Mensagem?" required autocomplete="off"></textarea>
 				<input type="submit" name="enviar" value="Enviar">
 			</form>					
 		</div>

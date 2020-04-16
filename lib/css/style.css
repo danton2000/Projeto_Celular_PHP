@@ -145,7 +145,7 @@ li a:hover{
 
 /*BUTTONS*/
 #botao-usar-sistema{
-	color: #fff;
+	color: #000;
 	background: rgb(255,184,0);
 	background: linear-gradient(90deg, rgba(255,184,0,1) 0%, rgba(239,245,0,1) 30%, rgba(239,245,0,1) 77%, rgba(255,184,0,1) 100%);
 	width: 100px;

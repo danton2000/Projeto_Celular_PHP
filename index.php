@@ -39,10 +39,10 @@
 			
 				<nav id="links-menu" class="menu collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#empresa">Home</a></li>
-						<li><a href="#empresa">Usar</a></li>
-						<li><a href="#empresa">Sobre</a></li>
-						<li><a href="#empresa">Telas</a></li>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#Projeto_Celular/tela_inicial.php">Usar</a></li>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#telas">Telas</a></li>
 						<li><a href="#contato">Contatos</a></li>
 					</ul>
 				</nav>

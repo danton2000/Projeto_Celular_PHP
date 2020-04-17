@@ -21,7 +21,7 @@ if (isset($_POST['enviar'])) {
         echo "<script>alert('$msg !');
         window.location.assign('../index.php');</script>";
     } else {
-        echo ("location: ../../index.php?erro=sent");
+        echo ("location: ../index.php?erro=sent");
     }
 }
 

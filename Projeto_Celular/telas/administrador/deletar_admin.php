@@ -1,11 +1,28 @@
 <?php
-include '../../lib/bd/conexao.php';
+include_once("../../lib/model/crud.class.php");
 
-$id_admin = $_GET['id_admin'];
+$id_adm = $_GET['id_adm'];
 
-$deletar = "DELETE FROM tb_admin where id_admin = $id_admin";
-$fila = mysqli_query($conexao, $deletar);
+if(isset($id_adm)){
+	$admin = new Crud("tbadmin");
+	$filtro = array(
+		"id_adm" => $id_adm
+	);
+	$resposta = $admin->selectCrud("*", true, $filtro);
+	// echo "<pre>";
+	// print_r($resposta);
+	// echo "</pre>";
+	$id_adm = $resposta[0]->id_adm;
 
-header("location: listar_admin.php");//faz a ação e depois volta para tela APROVAR_admin.PHP//
-	
+	if (isset($id_adm)){
+		$resposta = $admin->excluiCrud($filtro);
+		if($resposta){
+            header("location: listar_admin.php");
+        }else{
+			header("Location:listar_admin.php?delete=erro");
+		}
+		
+	}
+}
+
 ?>

@@ -60,7 +60,7 @@ if (isset($id_celular_get)) {
 				<div class="col-md-5 form-group">
 					<label>Nome do SmartPhone</label>
 					<input type="number" class="form-control" name="id_cel" value="<?php echo $id_cel ?>" style="display: none">
-					<input type="text" class="form-control" name="nome_cel" value="<?php echo $nome_cel; ?>" placeholder="Insira o numero do celular" required autocomplete="off">
+					<input type="text" class="form-control" name="nome_cel" value="<?php echo $nome_cel ?>" placeholder="Insira o numero do celular" required autocomplete="off">
 					<!--required = não pode ser em branco -->
 					<!-- autocomplete="off" = não salva os nomes -->
 				</div>

@@ -1,29 +1,40 @@
 <?php 
 
-include '../../lib/bd/conexao.php';
+include_once("../../lib/model/crud.class.php");
 
-$id_admin = $_POST['id_admin'];
-//$nro_celular = $_POST['nro_celular'];
-$nome_admin = $_POST['nome_admin'];
-$email_admin = $_POST['email_admin'];
-$nivel_admin = $_POST['nivel_admin'];
+if (isset($_POST['editar'])){
+	
+	$admin = new Crud("tbadmin");
+	$array_dados = array(
+		"nome_adm" => $_POST['nome_adm'],
+		"login_adm" =>  $_POST['login_adm'],
+		"senha_adm" =>  hash("sha256", $_POST['senha_adm']),
+	);
 
+	$array_id = array(
+		"id_adm" =>  $_POST['id_adm'],
+	);
 
-$sql = "UPDATE `tb_admin` SET `nome_admin`='$nome_admin',`email_admin`='$email_admin',`nivel_admin`=$nivel_admin WHERE id_admin = $id_admin";
-
-$atualizar = mysqli_query($conexao, $sql);
-
+	$resposta = $admin->atualizaCrud($array_dados, $array_id);
+	if($resposta){
+		echo'<link rel="stylesheet" href="../../lib/css/style.css">
+		<link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+		<div class="container" id="telas_atualizacao">
+			<center>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<h3 id="topo_listar_h">Administrador Atulizado com Sucesso!</h3>
+			<div id="topo_listar">
+				<a href="listar_admin.php" id="botao_voltar_listar" class="btn btn-sm ">Voltar para Listas de Administradores</a>
+			</div>
+			</center>
+		</div>';
+	}
+	else{
+		header("Location: atualizar_admin.php?update=erro");
+	}
+			
+}
 ?>
 
-<link rel="stylesheet" href="../../lib/css/style.css">
-<link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
-<div class="container" id="tamanho_container">
-	<center>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<h3 id="topo_listar_h">Usuário Atualizado com Sucesso!</h3>
-	<div id="topo_listar">
-		<a href="listar_admin.php" id="botao_listar" class="btn btn-sm ">Voltar para Listas de Usuários</a>
-	</div>
-	</center>
-</div>
+
 

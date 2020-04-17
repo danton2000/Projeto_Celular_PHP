@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Listagem de Categorias</title>
+	<title>Listagem de Administradores</title>
 	<link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../../lib/css/style.css"> 
 	<script src="https://kit.fontawesome.com/06ffaaed9a.js" crossorigin="anonymous"></script>
@@ -18,6 +18,12 @@
 		<div id="icone_esquerda">
 				<a href="cadastro_admin.php"><i class="fas fa-plus-circle"></i></a>
 		</div>
+
+		<div id="icone_esquerda2">
+				<a href="listar_admin_contatos.php"><i class="far fa-address-book"></i></a>
+		</div>
+
+		
 
 		<h3>LISTA DE ADMINISTRADOR</h3>
 		<div class="table-wrapper-scroll-y my-custom-scrollbar">
@@ -41,8 +47,8 @@
 							echo '<td>' . htmlspecialchars($valor->login_adm) . ' </td>';
 							echo '<td>' . htmlspecialchars($valor->senha_adm) . ' </td>';
 							echo '<td class="text-center">';
-							echo '<a href="editar_admin.php?id_cel=' . $valor->id_adm . '"name="editar" title="Editar"><i class="fa fa-pencil"></i></a> ';
-							echo '<a href="deletar_admin.php?id_cel=' . $valor->id_adm . '"name="excluir" title="Excluir"><i class="fa fa-trash-o text-danger"></i></a>';
+							echo '<a href="editar_admin.php?id_adm=' . $valor->id_adm . '"name="editar" title="Editar"><i class="fa fa-pencil"></i></a> ';
+							echo '<a href="deletar_admin.php?id_adm=' . $valor->id_adm . '"name="excluir" title="Excluir"><i class="fa fa-trash-o text-danger"></i></a>';
 							echo '</td>';
 							echo '</tr>';
 						}

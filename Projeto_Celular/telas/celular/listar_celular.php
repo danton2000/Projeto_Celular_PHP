@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Listagem de celulars</title>
+	<title>Listagem de SmartPhone</title>
 	<link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../../lib/css/style.css">
 	<script src="https://kit.fontawesome.com/06ffaaed9a.js" crossorigin="anonymous"></script>

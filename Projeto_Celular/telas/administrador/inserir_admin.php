@@ -1,5 +1,21 @@
 <?php
-
+	include '../../lib/model/conexao.class.php'; //incluir o arquivo para usar a conexão com banco de dados
+	include '../../lib/model/crud.class.php';
+	
+	if (isset($_POST['cadastrar'])) {
+	
+		$nome_adm = $_POST['nome_adm'];//name(do html)=[] //RECEBE O VALOR DO ATRIBUTO
+		$login_adm = $_POST['login_adm'];
+		$senha_adm = hash("sha256",$_POST['senha_adm']);
+	
+		$admin = new Crud("tbadmin");
+		$array_dados = array(
+			"nome_adm" => $nome_adm,
+			"login_adm" => $login_adm,
+			"senha_adm" => $senha_adm,
+		);
+	
+		$resposta = $admin->insereCrud($array_dados); //precisa criar um array com os dados
 
 		echo '
 		<meta charset="utf-8">
@@ -16,6 +32,7 @@
 				</div>
 			</div>
 		';
-	
+
+	};
 ?>
 

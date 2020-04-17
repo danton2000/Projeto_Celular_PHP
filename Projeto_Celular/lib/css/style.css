@@ -159,6 +159,20 @@
 	margin-top: -30px;
 }
 
+#icone_esquerda2{
+	margin-top: -55px;
+	margin-left: 55px;
+}
+
+.fa-address-book{
+	font-size: 45px;
+	color: rgb(43, 7, 250);
+}
+
+.fa-address-book:hover{
+	color: rgb(29, 9, 138);
+}
+
 .fa-plus-circle{
 	font-size: 45px;
 	color: #32CD32;

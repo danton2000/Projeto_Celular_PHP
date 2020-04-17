@@ -1,5 +1,5 @@
 <?php
-include '../../lib/bd/conexao.php';
+include_once("../../lib/model/crud.class.php");
 
 $id_admin = $_GET['id_admin'];
 $nivel_admin = $_GET['nivel_admin'];

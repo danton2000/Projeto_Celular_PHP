@@ -1,7 +1,25 @@
 <?php
-include '../../lib/bd/conexao.php';
+include_once("../../lib/model/crud.class.php");
 
-$id_admin = $_GET['id_admin'];//pegando o id e mostrando na tela.
+$id_adm = "";
+$nome_adm = "";
+$login_adm = "";
+$senha_adm = "";
+$id_adm_get = $_GET['id_adm'];
+
+if (isset($id_adm_get)) {
+	$admin = new Crud("tbadmin");
+	$filtro = array(
+		"id_adm" => $id_adm_get
+	);
+
+	$resposta = $admin->selectCrud("*", true, $filtro);
+	$id_adm = $resposta[0]->id_adm;
+	$nome_adm = $resposta[0]->nome_adm;
+    $login_adm = $resposta[0]->login_adm;
+    $senha_adm = $resposta[0]->senha_adm;
+
+}
 
 ?>
 
@@ -15,57 +33,35 @@ $id_admin = $_GET['id_admin'];//pegando o id e mostrando na tela.
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>	<!--container = espaçamento -->	<!--id = identificação. #=css -->
-<div class="container" id="tamanho_container"><!-- distancia do topo de:40px -->
-	<div id="botao_direita">
-      <a href="listar_admin.php" role="button" id="botao_voltar" class="btn btn-sm">Voltar</a>
-  </div>    
-	<h4>Formulário de Edição de Usuários</h4>
-	
-	<form id="espaçamento" action="atualizar_admin.php" method="POST"><!-- Enviar uma informação = POST,Pegar um valor = GET --> <!--distancia de 20px do form -->
+<div class="container" id="telas_cadastro_admin">
+        <div id="botao_direita">
+            <a href="listar_admin.php" role="button" id="botao_voltar_admin" class="btn btn-sm">Voltar</a>
+        </div>
 
-	<?php 
+        <h4>Editar de Administradores</h4>
+        <form action="atualizar_admin.php" method="post">
+            <!--POST = inserir dados -->
+            <div class="row">
+                <div class="col-md-5 form-group">
+                    <label>Nome do Administrador</label>
+                    <input type="number" class="form-control" name="id_adm" value="<?php echo $id_adm ?>" style="display: none">
+                <input type="text" name="nome_adm" placeholder="Digite o seu nome completo" class="form-control" value="<?php echo $nome_adm ?>" required autocomplete="off">
+                </div> 
+                <div class="col-md-5 form-group">
+                    <label>Login do Administrador</label>
+                    <input type="text" name="login_adm" placeholder="Digite o seu login" class="form-control" value="<?php echo $login_adm ?>" required autocomplete="off">
+                </div>
+                <div class="col-md-5 form-group">
+                    <label>Senha do Administrador</label>
+                    <input type="password" name="senha_adm" placeholder="Digite a sua senha" class="form-control" value="<?php echo $senha_adm ?>" required autocomplete="off">
+                </div>
 
-		$sql = "SELECT * FROM `tb_admin` WHERE id_admin = $id_admin";
-		$buscar  = mysqli_query($conexao,$sql);
-		while ($array = mysqli_fetch_array($buscar)) {
-
-		$id_admin = $array['id_admin'];
-    	$nome_admin = $array['nome_admin'];
-    	$email_admin = $array['email_admin'];
-    	$nivel_admin = $array['nivel_admin'];
-  ?>
-
-		<div class="form-group">
-			<label>ID do Usuário</label>
-			<input type="number" class="form-control" name="id_admin"  readonly value="<?php echo $id_admin ?>"><!-- readonly = envia o valor para o formulário e também não pode editar. -->
-		</div>
-
-		<div class="form-group">
-			<label>Nome do Usuário</label>
-			<input type="text" class="form-control" name="nome_admin" value="<?php echo $nome_admin ?>"   autocomplete="off"><!--required = não pode ser em branco --> <!-- autocomplete="off" = não salva os nomes -->
-		</div>
-
-		<div class="form-group">
-			<label>Email do Usuário</label>
-			<input type="email" class="form-control" name="email_admin" value="<?php echo $email_admin ?>">
-		</div>
-
-		<div class="form-group">
-			<label>Nivel</label>
-			<select class="form-control" name="nivel_admin"required>
-				<option value="1">Administrador</option>
-				<option value="2">Funcionário</option>
-				<option value="3">Conferente</option>
-			</select>
-		</div>
-
-  		<!-- DEIXANDO O BOTÃO NO LADO DIREITO -->
-  		<div id="botao_direita">
-  			<button type="submit" id="botao_editar" class="btn btn-sm">Salvar Edição</button><!--submit = enviar as informações -->
-  		</div>
-  	<?php } ?>
-  	</form>
-</div>
+                <div id="botao_direita">
+                    <button type="submit" name="editar" id="botao_cadastrar_admin" class="btn btn-sm">Editar</button>
+                </div>
+             </div>
+        </form>
+    </div>
 
 <!--<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
